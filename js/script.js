@@ -43,6 +43,54 @@ function getPrice1() {
         })
 }
 
+// GET API PRICE 2
+const getPrice2BtnElement = document.getElementById("getPrice2");
+
+getPrice2BtnElement.addEventListener("click", getPrice2);
+
+function getPrice2() {
+    fetch('./api/price2.json')
+        .then((res) => res.json())
+        .then((data) => {
+            let output = '<h2>extra priser</h2>';
+            data.forEach(function (data) {
+                output += `
+              <ul>
+                <li>${data.text1}</li>
+                <li>${data.text2}</li>
+                <li>${data.text3}</li>
+                <li>${data.text4}</li>
+              </ul>
+            `;
+            })
+            document.getElementById('output2').innerHTML = output;
+        })
+}
+
+// GET API PRICE 3
+const getPrice3BtnElement = document.getElementById("getPrice3");
+
+getPrice3BtnElement.addEventListener("click", getPrice3);
+
+function getPrice3() {
+    fetch('./api/price3.json')
+        .then((res) => res.json())
+        .then((data) => {
+            let output = '<h2>extra priser</h2>';
+            data.forEach(function (data) {
+                output += `
+              <ul>
+                <li>${data.text1}</li>
+                <li>${data.text2}</li>
+                <li>${data.text3}</li>
+                <li>${data.text4}</li>
+              </ul>
+            `;
+            })
+            document.getElementById('output3').innerHTML = output;
+        })
+}
+
 // GET API ABOUT US
 const getAboutBtnElement = document.getElementById("getAbout");
 
