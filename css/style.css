@@ -2,6 +2,16 @@
 /*                 CSS                    */
 /*----------------------------------------*/
 
+@font-face {
+	font-family: "Square";
+	src: url(../font/Square.ttf);
+}
+
+@font-face {
+	font-family: "Squareo";
+	src: url(../font/Squareo.ttf);
+}
+
 a {
 	text-decoration: none !important;
 	background-color: transparent;
@@ -16,6 +26,17 @@ ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 400;
+	font-family: "Square", sans-serif;
 }
 
 /*----------------------------------------*/
@@ -243,6 +264,52 @@ ol {
 	background-size: cover;
 	background-position: top center;
 	background-image: url(../img/featured/bg3.jpg)
+}
+
+/*----------------------------------------*/
+/*                 ABOUT                  */
+/*----------------------------------------*/
+
+.about-text {
+	padding-top: 18px;
+}
+
+.imgx {
+	transition: transform .9s, filter 1.5s ease-in-out;
+	max-width: 100%;
+}
+
+.imgx:hover {
+	transform: scale(1.1)
+}
+
+.about-text h2 {
+	font-size: 48px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 14%;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+
+.about-text p.short-details {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.about-text p.long-details {
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.about-img img {
+	min-width: 100%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	border-radius: 8px;
 }
 
 /*----------------------------------------*/
