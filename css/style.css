@@ -39,7 +39,6 @@ h6 {
 	font-family: "Square", sans-serif;
 }
 
-
 /*----------------------------------------*/
 /*                 BUTTONS                */
 /*----------------------------------------*/
@@ -185,22 +184,6 @@ h6 {
 	margin: 0;
 }
 
-@media screen and (max-width: 980px) {
-
-	#banner h1 {
-		font-size: 5em;
-	}
-
-}
-
-@media screen and (max-width: 736px) {
-
-	#banner h1 {
-		font-size: 3em;
-	}
-
-}
-
 /*----------------------------------------*/
 /*                 ITEMS                  */
 /*----------------------------------------*/
@@ -268,6 +251,52 @@ h6 {
 }
 
 /*----------------------------------------*/
+/*                 ABOUT                  */
+/*----------------------------------------*/
+
+.about-text {
+	padding-top: 18px;
+}
+
+.imgx {
+	transition: transform .9s, filter 1.5s ease-in-out;
+	max-width: 100%;
+}
+
+.imgx:hover {
+	transform: scale(1.1)
+}
+
+.about-text h2 {
+	font-size: 48px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: 14%;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+
+.about-text p.short-details {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.about-text p.long-details {
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.about-img img {
+	min-width: 100%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	border-radius: 8px;
+}
+
+/*----------------------------------------*/
 /*                 SCHEDULE               */
 /*----------------------------------------*/
 
@@ -281,6 +310,10 @@ h6 {
 @media (max-width: 767px) {
 	.hide-sm {
 		display: none;
+	}
+
+	#banner h1 {
+		font-size: 3em;
 	}
 
 	.center-sm {
@@ -529,6 +562,79 @@ h6 {
 .choose-item p {
 	color: #bbb;
 	font-weight: 500;
+}
+
+/*----------------------------------------*/
+/*                 VIDEO                  */
+/*----------------------------------------*/
+
+.video-section {
+	text-align: center;
+	height: 500px;
+}
+
+.video-section .video-text {
+	text-align: center;
+	padding-top: 150px;
+}
+
+.video-section .video-text h2 {
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 42px;
+}
+
+.video-section .video-text .play-btn {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	font-size: 22px;
+	background: #ffffff;
+	text-align: center;
+	line-height: 62px;
+	color: #333B48;
+	border-radius: 50%;
+	position: relative;
+	padding-left: 5px;
+	transition: transform .5s, filter 5.5s ease-in-out;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: #001F3F;
+	}
+
+	100% {
+		background-color: #FF4136;
+	}
+}
+
+.video-section .video-text .play-btn:after {
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	width: 70px;
+	height: 70px;
+	background: #ffffff;
+	opacity: 0.7;
+	border-radius: 50%;
+	content: "";
+	animation: pulse 5s infinite;
+}
+
+.video-section .video-text .play-btn:hover {
+	color: #333B48;
+	background: #fff;
+	transform: scale(1.2);
+}
+
+.set-bg5 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-image: url(../img/dronebillede.jpg)
 }
 
 /*----------------------------------------*/
